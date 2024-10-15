@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload='init()'>
+    <div class="container">
+      <div>
+        <h1>Guess the number <br>between 0-100</br> </h1>
+      </div>
+
+      <img
+        src="./images/guess-the-number-removebg-preview (1).png"
+        alt="Guess the number banner"
+      />
+      <div class="difficulty">
+        <h2>Set the difficulty</h2>
+        <p class="easyAt">Easy: 10 Attempts</p>
+        <p class="hardAt">Hard: 5 Attempts</p>
+      </div>
+    
+    </div>
+
+    <!-- Starting new game and result -->
+
+    <div id="gameArea">
+        <section class="upperSection">
+            <button class="newGame">New Game</button>
+            <h2 class="alert">Your Guess</h2>
+            <!-- <label for="enterGuess"></label> -->
+            <input type="number" class="enterGuess" placeholder="Enter your guess" min="1" max="100">
+        </section>
+      
+        <div class="gameResult">
+            <div class="stats">
+                <p>Number of previous Attempts</p>
+                <span id="attempts">0</span>
+            </div>
+            <div class="stats">
+                <p>Number of previous guesses</p>
+                <span id="guesses">-</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- script linking -->
+    <script src="index.js"></script>
+  </body>
+</html>
